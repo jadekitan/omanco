@@ -1,68 +1,145 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --dark: rgba(14, 15, 29, 1);
+  --LARGE-BODY-BOLD-font-family: "DM Sans", Helvetica;
+  --LARGE-BODY-BOLD-font-size: 16px;
+  --LARGE-BODY-BOLD-font-style: normal;
+  --LARGE-BODY-BOLD-font-weight: 700;
+  --LARGE-BODY-BOLD-letter-spacing: 0px;
+  --LARGE-BODY-BOLD-line-height: 24px;
+  --LARGE-BODY-font-family: "DM Sans", Helvetica;
+  --LARGE-BODY-font-size: 16px;
+  --LARGE-BODY-font-style: normal;
+  --LARGE-BODY-font-weight: 400;
+  --LARGE-BODY-letter-spacing: 0px;
+  --LARGE-BODY-line-height: 24px;
+  --LARGE-BUTTON-font-family: "DM Sans", Helvetica;
+  --LARGE-BUTTON-font-size: 14px;
+  --LARGE-BUTTON-font-style: normal;
+  --LARGE-BUTTON-font-weight: 500;
+  --LARGE-BUTTON-letter-spacing: 0px;
+  --LARGE-BUTTON-line-height: 20px;
+  --LARGE-DISPLAY-font-family: "DM Sans", Helvetica;
+  --LARGE-DISPLAY-font-size: 82px;
+  --LARGE-DISPLAY-font-style: normal;
+  --LARGE-DISPLAY-font-weight: 700;
+  --LARGE-DISPLAY-letter-spacing: 0px;
+  --LARGE-DISPLAY-line-height: 88px;
+  --LARGE-HEADING-font-family: "DM Sans", Helvetica;
+  --LARGE-HEADING-font-size: 43px;
+  --LARGE-HEADING-font-style: normal;
+  --LARGE-HEADING-font-weight: 700;
+  --LARGE-HEADING-letter-spacing: 0px;
+  --LARGE-HEADING-line-height: 49px;
+  --LARGE-TITLE-font-family: "DM Sans", Helvetica;
+  --LARGE-TITLE-font-size: 22px;
+  --LARGE-TITLE-font-style: normal;
+  --LARGE-TITLE-font-weight: 700;
+  --LARGE-TITLE-letter-spacing: 0px;
+  --LARGE-TITLE-line-height: 28px;
+  --LINK-font-family: "DM Sans", Helvetica;
+  --LINK-font-size: 14px;
+  --LINK-font-style: normal;
+  --LINK-font-weight: 500;
+  --LINK-letter-spacing: 0px;
+  --LINK-line-height: 20px;
+  --MEDIUM-BODY-BOLD-font-family: "DM Sans", Helvetica;
+  --MEDIUM-BODY-BOLD-font-size: 14px;
+  --MEDIUM-BODY-BOLD-font-style: normal;
+  --MEDIUM-BODY-BOLD-font-weight: 700;
+  --MEDIUM-BODY-BOLD-letter-spacing: 0px;
+  --MEDIUM-BODY-BOLD-line-height: 20px;
+  --MEDIUM-BODY-font-family: "DM Sans", Helvetica;
+  --MEDIUM-BODY-font-size: 14px;
+  --MEDIUM-BODY-font-style: normal;
+  --MEDIUM-BODY-font-weight: 400;
+  --MEDIUM-BODY-letter-spacing: 0px;
+  --MEDIUM-BODY-line-height: 20px;
+  --MEDIUM-DISPLAY-font-family: "DM Sans", Helvetica;
+  --MEDIUM-DISPLAY-font-size: 66px;
+  --MEDIUM-DISPLAY-font-style: normal;
+  --MEDIUM-DISPLAY-font-weight: 700;
+  --MEDIUM-DISPLAY-letter-spacing: 0px;
+  --MEDIUM-DISPLAY-line-height: 72px;
+  --MEDIUM-HEADING-font-family: "DM Sans", Helvetica;
+  --MEDIUM-HEADING-font-size: 34px;
+  --MEDIUM-HEADING-font-style: normal;
+  --MEDIUM-HEADING-font-weight: 700;
+  --MEDIUM-HEADING-letter-spacing: 0px;
+  --MEDIUM-HEADING-line-height: 40px;
+  --MEDIUM-TITLE-font-family: "DM Sans", Helvetica;
+  --MEDIUM-TITLE-font-size: 16px;
+  --MEDIUM-TITLE-font-style: normal;
+  --MEDIUM-TITLE-font-weight: 700;
+  --MEDIUM-TITLE-letter-spacing: 0px;
+  --MEDIUM-TITLE-line-height: 24px;
+  --neutral-100: rgba(245, 245, 245, 1);
+  --neutral-200: rgba(229, 229, 229, 1);
+  --neutral-300: rgba(212, 212, 212, 1);
+  --neutral-400: rgba(163, 163, 163, 1);
+  --neutral-50: rgba(250, 250, 250, 1);
+  --neutral-500: rgba(115, 115, 115, 1);
+  --neutral-600: rgba(82, 82, 82, 1);
+  --neutral-700: rgba(64, 64, 64, 1);
+  --neutral-800: rgba(38, 38, 38, 1);
+  --neutral-900: rgba(23, 23, 23, 1);
+  --primary-color100: rgba(222, 171, 163, 1);
+  --primary-color200: rgba(207, 133, 122, 1);
+  --primary-color300: rgba(192, 96, 82, 1);
+  --primary-color400: rgba(178, 58, 41, 1);
+  --primary-color50: rgba(229, 189, 184, 1);
+  --primary-color500: rgba(163, 21, 0, 1);
+  --primary-color600: rgba(137, 18, 0, 1);
+  --primary-color700: rgba(111, 14, 0, 1);
+  --primary-color800: rgba(85, 11, 0, 1);
+  --primary-color900: rgba(59, 8, 0, 1);
+  --SMALL-BODY-BOLD-font-family: "DM Sans", Helvetica;
+  --SMALL-BODY-BOLD-font-size: 8px;
+  --SMALL-BODY-BOLD-font-style: normal;
+  --SMALL-BODY-BOLD-font-weight: 700;
+  --SMALL-BODY-BOLD-letter-spacing: 0px;
+  --SMALL-BODY-BOLD-line-height: 12px;
+  --SMALL-BODY-font-family: "DM Sans", Helvetica;
+  --SMALL-BODY-font-size: 8px;
+  --SMALL-BODY-font-style: normal;
+  --SMALL-BODY-font-weight: 400;
+  --SMALL-BODY-letter-spacing: 0px;
+  --SMALL-BODY-line-height: 12px;
+  --SMALL-BUTTON-font-family: "DM Sans", Helvetica;
+  --SMALL-BUTTON-font-size: 10px;
+  --SMALL-BUTTON-font-style: normal;
+  --SMALL-BUTTON-font-weight: 500;
+  --SMALL-BUTTON-letter-spacing: 0px;
+  --SMALL-BUTTON-line-height: 16px;
+  --SMALL-DISPLAY-font-family: "DM Sans", Helvetica;
+  --SMALL-DISPLAY-font-size: 52px;
+  --SMALL-DISPLAY-font-style: normal;
+  --SMALL-DISPLAY-font-weight: 700;
+  --SMALL-DISPLAY-letter-spacing: 0px;
+  --SMALL-DISPLAY-line-height: 56px;
+  --SMALL-HEADING-font-family: "DM Sans", Helvetica;
+  --SMALL-HEADING-font-size: 26px;
+  --SMALL-HEADING-font-style: normal;
+  --SMALL-HEADING-font-weight: 700;
+  --SMALL-HEADING-letter-spacing: 0px;
+  --SMALL-HEADING-line-height: 32px;
+  --SMALL-TITLE-font-family: "DM Sans", Helvetica;
+  --SMALL-TITLE-font-size: 14px;
+  --SMALL-TITLE-font-style: normal;
+  --SMALL-TITLE-font-weight: 700;
+  --SMALL-TITLE-letter-spacing: 0px;
+  --SMALL-TITLE-line-height: 20px;
+  --variation-100: rgba(199, 205, 213, 1);
+  --variation-200: rgba(174, 183, 195, 1);
+  --variation-300: rgba(150, 160, 176, 1);
+  --variation-400: rgba(125, 138, 158, 1);
+  --variation-50: rgba(212, 216, 223, 1);
+  --variation-500: rgba(100, 116, 139, 1);
+  --variation-600: rgba(84, 97, 117, 1);
+  --variation-700: rgba(68, 79, 95, 1);
+  --variation-800: rgba(52, 60, 72, 1);
+  --variation-900: rgba(36, 42, 50, 1);
+  --white: rgba(255, 255, 255, 1);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
